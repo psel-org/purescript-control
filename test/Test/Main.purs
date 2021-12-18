@@ -1,9 +1,11 @@
 module Test.Main (main) where
 
 import Effect (Effect)
-import Data.Unit (Unit)
-
+import Test.Control.Extend (testExtendArray)
 import Test.Control.Lazy (testLazy)
+import Prelude
 
 main :: Effect Unit
-main = testLazy
+main = do
+  testLazy
+  testExtendArray
