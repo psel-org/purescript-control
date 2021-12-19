@@ -1,5 +1,7 @@
 ;; -*- lexical-binding: t; -*-
 
+(require 'seq)
+
 (defvar Control.Extend.arrayExtend
   (lambda (f)
     (lambda (xs)
